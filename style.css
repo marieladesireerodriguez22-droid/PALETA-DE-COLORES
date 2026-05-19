@@ -65,3 +65,33 @@ button:hover {
     height: 120px;
     width: 100%;
 }
+.color-info {
+    padding: 0.8rem;
+    text-align: center;
+}
+.color-info p {
+    font-size: 0.85rem;
+    color: #555;
+    word-break: break-a11;
+}
+
+/*toast de notificacion*/
+.toast {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #28a745;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    font-weight: bold;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+
+}
+.toast.show {
+    transform: translateY(0);
+    opacity: 1;
+}
