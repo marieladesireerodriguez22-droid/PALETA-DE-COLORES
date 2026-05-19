@@ -5,8 +5,38 @@
         <meta name="Viewport" content="width=device-width,inital-scale=1-0">
         <title>Generador de paleta de colores</title>
     </head>
+    <body>
+        <header>
+            <h1>Generador de Paletas</h1>
+        </header>
+
+        <main>
+            <section class="controls">
+                <label for="paletteSize">Tamaño:</label>
+                <selec id="paletteSize">
+                    <option value="6">6 colores</option>
+                    <option value="8">8 colores</option>
+                    <option value="9"> colores</option>
+                </selec>
+
+                <label for="colorFormat">Formato:</label>
+                <selec id="colorFormat">
+                    <option value="hex">HEX</option>
+                    <opcion value="hsl">HSL</opcion>
+                </selec>
+
+                <button id="generateBtn">Generar Paleta</button>
+                </section>
+
+                <section id="paletteContainer" class="palette-container">
+                    <!--Los colores se generaran aca-->
+                </section>
+        </main>
+
+        <!--Microfeedback: toast--->
+        <div id="toast">Paleta generada correctamente</div>
+    </body>
 </html>
-<body>
+
     
 
-</body>
