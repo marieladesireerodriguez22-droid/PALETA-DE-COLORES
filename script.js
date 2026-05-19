@@ -32,8 +32,8 @@ document.getElementById('generateBtn').addEventListener('click', function() {
                 case r_norm: h = (g_norm - b_norm) / d + (g_norm < b_norm ? 6 : 0); break;
                 case g_norm: h = (b_norm - r_norm) / d + 2; break;
                 case b_norm: h = (r_norm - g_norm) / d + 4; break;
-
-            }
+                }
+                
             h = Math.round(h * 60);
         }
         colorString =  `hsl(${h}, ${Math.round(s * 100)}%, ${Math.round(l * 100)}%)`;
@@ -42,7 +42,31 @@ document.getElementById('generateBtn').addEventListener('click', function() {
     //Crear elemento visual de la tarjeta
     const colorCard = document.createElement('div');
     colorCard.classList.add('color-card');
-    
+
+    //Mantener el valor original del fondo del color
+    const colorHex = '#' + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
+    colorCard.innerHTML = `
+    <div class= "color-box" style="backgraund-color: ${colorHex};"></div>
+    <div class= "color-info">
+        <p>${colorString}</p>
+    </div>
+     `;
+
+     //Copiar al portapapeles
+     colorCard.addEventListener('click', () => {
+        navigator.clipboard.writeText(colorString);
+        showToast('¡Código copiado al portapapeles!');
+
+     });
+     container.appendChild(colorCard);
+    }
+    //Mostrar el toast "Paleta generada correctamente"
+    showToast('Paleta generada correctamente');
+});
+
+
+
+
 
 
     
