@@ -60,3 +60,8 @@ button:hover {
     flex-direction: column;
     cursor: pointer;
 }
+
+.color-box {
+    height: 120px;
+    width: 100%;
+}
