@@ -1,4 +1,4 @@
-# PALETA-DE-COLORES
+# PROYECTOM1-DESIREÉ.RODRIGUEZ
 # Generador de Paletas de Colores 🎨
 
 Una aplicación web sencilla y rápida para generar combinaciones de colores aleatorias y copiar sus códigos con un solo clic.
@@ -29,5 +29,5 @@ No necesitas instalar Node.js ni configurar ningún servidor. Es un proyecto est
 2. Asegúrate de que el HTML tenga enlazados los archivos de CSS y JS.
 3. Haz **doble clic** sobre el archivo `index.html`.
 4. Se abrirá automáticamente en tu navegador web (Chrome, Edge, Firefox, etc.).g
-
+ 
 
