@@ -28,6 +28,6 @@ No necesitas instalar Node.js ni configurar ningún servidor. Es un proyecto est
 1. Descarga los tres archivos del proyecto (`index.html`, `styles.css` y `script.js`) y guárdalos juntos en una misma carpeta.
 2. Asegúrate de que el HTML tenga enlazados los archivos de CSS y JS.
 3. Haz **doble clic** sobre el archivo `index.html`.
-4. Se abrirá automáticamente en tu navegador web (Chrome, Edge, Firefox, etc.).g
+4. Se abrirá automáticamente en tu navegador web (Chrome, Edge, Firefox, etc.).
  
 
