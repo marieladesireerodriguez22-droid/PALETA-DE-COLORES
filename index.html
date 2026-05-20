@@ -1,43 +1,45 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="Viewport" content="width=device-width,inital-scale=1-0">
-        <title>Generador de paleta de colores</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Paletas de Colores</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-        <header>
-            <h1>Generador de Paletas</h1>
-        </header>
+    <header>
+        <h1>Generador de Paletas</h1>
+    </header>
 
-        <main>
-            <section class="controls">
-                <label for="paletteSize">Tamaño:</label>
-                <selec id="paletteSize">
-                    <option value="6">6 colores</option>
-                    <option value="8">8 colores</option>
-                    <option value="9"> colores</option>
-                </selec>
+    <main>
+        <section class="controls">
+            <label for="paletteSize">Tamaño:</label>
+            <select id="paletteSize">
+                <option value="6">6 Colores</option>
+                <option value="8">8 Colores</option>
+                <option value="9">9 Colores</option>
+            </select>
+            
+            <label for="colorFormat">Formato:</label>
+            <select id="colorFormat">
+                <option value="hex">HEX</option>
+                <option value="hsl">HSL</option>
+            </select>
 
-                <label for="colorFormat">Formato:</label>
-                <selec id="colorFormat">
-                    <option value="hex">HEX</option>
-                    <opcion value="hsl">HSL</opcion>
-                </selec>
+            <button id="generateBtn">Generar Paleta</button>
+        </section>
 
-                <button id="generateBtn">Generar Paleta</button>
-                </section>
+        <section id="paletteContainer" class="palette-container">
+            <!-- Los colores se generarán aquí -->
+        </section>
+    </main>
 
-                <section id="paletteContainer" class="palette-container">
-                    <!--Los colores se generaran aca-->
-                </section>
-        </main>
+    <!-- Microfeedback: Toast -->
+    <div id="toast" class="toast">Paleta generada correctamente</div>
 
-        <!--Microfeedback: toast--->
-        <div id="toast">Paleta generada correctamente</div>
-    </body>
+    <script src="script.js"></script>
+</body>
 </html>
 
     
