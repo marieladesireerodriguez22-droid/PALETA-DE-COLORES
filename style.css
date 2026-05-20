@@ -3,31 +3,30 @@
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
 }
+
 body {
     background-color: #f4f4f9;
     color: #333;
     display: flex;
-    flex-direction: colum;
+    flex-direction: column;
     align-items: center;
     padding: 2rem;
     min-height: 100vh;
-
 }
 
 header {
-    margin-bottom: 2 rem;
+    margin-bottom: 2rem;
 }
 
-.controles {
+.controls {
     display: flex;
     gap: 1rem;
     align-items: center;
     background: white;
     padding: 1rem 1.5rem;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     margin-bottom: 2rem;
 }
 
@@ -36,6 +35,14 @@ select, button {
     border-radius: 4px;
     border: 1px solid #ccc;
     font-size: 1rem;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
 }
 
 button:hover {
@@ -47,7 +54,7 @@ button:hover {
     flex-wrap: wrap;
     gap: 1.5rem;
     justify-content: center;
-    max-width: 1000px;
+    max-width: 900px;
 }
 
 .color-card {
@@ -65,17 +72,19 @@ button:hover {
     height: 120px;
     width: 100%;
 }
+
 .color-info {
     padding: 0.8rem;
     text-align: center;
 }
+
 .color-info p {
     font-size: 0.85rem;
     color: #555;
-    word-break: break-a11;
+    word-break: break-all;
 }
 
-/*toast de notificacion*/
+/* Toast de notificación */
 .toast {
     position: fixed;
     bottom: 20px;
@@ -89,8 +98,8 @@ button:hover {
     transform: translateY(100px);
     opacity: 0;
     transition: transform 0.4s ease, opacity 0.4s ease;
-
 }
+
 .toast.show {
     transform: translateY(0);
     opacity: 1;
