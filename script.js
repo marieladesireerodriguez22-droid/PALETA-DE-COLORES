@@ -28,7 +28,7 @@ document.getElementById('generateBtn').addEventListener('click', function() {
         } else {
             let d = max - min;
             s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
-            swith (max) {
+            switch (max){
                 case r_norm: h = (g_norm - b_norm) / d + (g_norm < b_norm ? 6 : 0); break;
                 case g_norm: h = (b_norm - r_norm) / d + 2; break;
                 case b_norm: h = (r_norm - g_norm) / d + 4; break;
@@ -64,10 +64,20 @@ document.getElementById('generateBtn').addEventListener('click', function() {
     showToast('Paleta generada correctamente');
 });
 
+//Función para mostrar el toast con animación
+function showToast(message) {
+    const toast = document.getElementById('toast');
+    toast.textContent = message;
+    toast.classList.add('show');
+
+    setTimeout(() => {
+        toast.classList.add('show');
+    }, 3000);
+}
+
 
 
 
 
 
     
-}
