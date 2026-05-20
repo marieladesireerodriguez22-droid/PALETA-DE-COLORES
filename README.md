@@ -1,4 +1,4 @@
-# PALETA-DE-COLORES
+# PROYECTOM1-DESIREÉ.RODRIGUEZ
 # Generador de Paletas de Colores 🎨
 
 Una aplicación web sencilla y rápida para generar combinaciones de colores aleatorias y copiar sus códigos con un solo clic.
